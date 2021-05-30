@@ -32,7 +32,7 @@ job('NodeJS Docker') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('Naief-dev/docker-nodejs-demo') //qa / dev
+            repositoryName('Naiefe-dev/docker-cicd.git') //qa / dev
             buildContext('./basics')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('naiefe')
