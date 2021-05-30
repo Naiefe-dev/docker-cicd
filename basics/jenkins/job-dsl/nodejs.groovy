@@ -1,6 +1,6 @@
 job('NodeJS Moshe') {
     scm {
-        git('git://github.com/yanivomc/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/Naiefe-dev/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
@@ -19,7 +19,7 @@ job('NodeJS Moshe') {
 
 job('NodeJS Docker') {
     scm {
-        git('git://github.com/yanivomc/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/Naiefe-dev/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
