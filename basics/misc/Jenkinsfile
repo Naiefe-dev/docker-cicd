@@ -14,7 +14,7 @@ node {
      }
    }
    stage('docker build/push') {
-     docker.withRegistry('https://index.docker.io/v1/', 'dockeryaniv') {
+     docker.withRegistry('https://index.docker.io/v1/', 'naiefe') {
        def app = docker.build("Naiefe-dev/docker-cicd:${commit_id}", '.').push()
      }
    }
